@@ -1,0 +1,60 @@
+#pragma once
+
+
+class Vector2D
+{
+
+private:
+	T a, b;
+
+public:
+	Vector3D();
+	Vector3D(T a, T b);
+
+	T get_a();
+	T get_b();
+	
+
+	~Vector2D();
+
+};
+
+
+template <class T>
+
+class Matrix2D
+{
+    public:
+   
+    Mtrix2D(); 
+    Mtrix2D(T first_row_a, T first_row_b,
+            T second_row_a, T second_row_b );
+    
+    Vector2D<T> get_vector_a();
+    Vector2D<T> get_vector_b();
+            
+    
+    ~Matrix2D();
+        
+    private:
+        
+    Vector2D<T> a;
+    Vector2D<T> b;
+};
+
+template <typename T>
+
+Vector2D<T>::Vector2D()
+
+{
+    
+    
+}
+
+
+
+
+
+
+
+
